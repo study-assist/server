@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "study-assist-server",
+  "builds": [
+    {
+      "src": "app.js",
+      "use": "@now/node"
+    }
+  ]
+}
