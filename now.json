@@ -2,10 +2,7 @@
   "version": 2,
   "name": "study-assist-server",
   "builds": [
-    {
-      "src": "app.js",
-      "use": "@now/node-server"
-    }
-  ],
-  "routes": [{ "src": "/(.*)", "dest": "app.js" }]
+    { "src": "bin/www", "use": "@now/static" },
+    { "src": "app.js", "use": "@now/node" }
+  ]
 }
