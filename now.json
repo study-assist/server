@@ -2,7 +2,16 @@
   "version": 2,
   "name": "study-assist-server",
   "builds": [
-    { "src": "bin/www", "use": "@now/static" },
-    { "src": "app.js", "use": "@now/node" }
-  ]
+    { "src": "package.json", "use": "@now/static-build" },
+    { "src": "bin/www", "use": "@now/node-server" },
+    { "src": "app.js", "use": "@now/node" },
+    { "src": "lib/**.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "routes/indexRouter.js", "methods": ["POST"] }
+  ],
+  "env": {
+    "API_KEY": "@watson-api-key",
+    "API_URL": "@watson-api-url"
+  }
 }

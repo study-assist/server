@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node ./bin/www",
+    "now-build": "npm start",
     "debug": "DEBUG=server:* node --inspect ./bin/www",
     "watch": "DEBUG=server:* nodemon --inspect ./bin/www"
   },
