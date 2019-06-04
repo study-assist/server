@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "name": "study-assist-server",
+  "builds": [
+    { "src": "**/*.js", "use": "@now/node" },
+    { "src": "bin/www", "use": "@now/node" }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "app.js" }],
+  "env": {
+    "API_KEY": "@watson-api-key",
+    "API_URL": "@watson-api-url"
+  }
+}
