@@ -7,7 +7,7 @@
   ],
   "routes": [{ "src": "/(.*)", "dest": "app.js" }],
   "env": {
-    "API_KEY": "@watson-api-key",
-    "API_URL": "@watson-api-url"
+    "API_KEY": "@api-key",
+    "API_URL": "@api-url"
   }
 }
